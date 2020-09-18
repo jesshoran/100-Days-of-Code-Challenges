@@ -70,6 +70,14 @@ p "Thanks, #{input}"
 def deal num, playernum.times{@cards.shift.get_card(player)}
 end
 
+#deal player cards
+puts "Here are your cards"
+deck = Deck.newdeck.deal(2, human)
+
+#show cards
+puts "#{human.hand[0].value} #{human.hand[0].suit}"
+puts "#{human.hand[1].value} #{human.hand[1].suit}"
+
+puts "The computer is showing #{computer.hand[0].value} #{computer.hand[1].suit}"
 
     
-
