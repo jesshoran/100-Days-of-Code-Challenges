@@ -67,6 +67,8 @@ p "Thanks, #{input}"
 # get_card human
 # p human.hand
 
+def deal num, playernum.times{@cards.shift.get_card(player)}
+end
 
 
     
