@@ -41,8 +41,8 @@ class Deck
             value = 10
         end
         #create 4 sets of 13  by suits and push into cards array
-        @suits.each do 
-            @cards << Card.new
+        @suits.each do |suit|
+            @cards << Card.new(value, suit)
         end
     end
     @cards.shuffle!
@@ -58,16 +58,17 @@ p "Thanks, #{input}"
 
 #get a new card
 
-# def get_card (player)
-#     new_card = Card.new value, suit
-#     player.hand << new_card
-# end
+def get_card (player)
+    new_card = Card.new value, suit
+    player.hand << new_card
+end
 
 
 # get_card human
 # p human.hand
 
-def deal num, playernum.times{@cards.shift.get_card(player)}
+def deal num, player 
+    num.times{@cards.shift.get_card(player)}
 end
 
 #deal player cards
