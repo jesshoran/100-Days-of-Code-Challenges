@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    @users = User.all.sample(6)
+    @users = User.all.sample(3)
 
     render json: @users
   end
