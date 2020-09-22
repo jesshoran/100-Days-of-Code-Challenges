@@ -280,3 +280,31 @@ Processing by UsersController#index as */*
 Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms | Allocations: 1228)
 
 
+Started GET "/users" for ::1 at 2020-09-22 14:48:48 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 8.0ms | Allocations: 6407)
+
+
+Started POST "/users" for ::1 at 2020-09-22 14:49:50 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"john", "starsign"=>"libra", "age"=>"45", "img"=>"https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png", "ltl"=>"false", "user"=>{"name"=>"john", "starsign"=>"libra", "age"=>"45", "img"=>"https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png", "ltl"=>"false"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "starsign", "age", "img", "ltl", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "john"], ["starsign", "libra"], ["age", 45], ["img", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png"], ["ltl", false], ["created_at", "2020-09-22 21:49:50.732762"], ["updated_at", "2020-09-22 21:49:50.732762"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.8ms | ActiveRecord: 3.3ms | Allocations: 2887)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users" for ::1 at 2020-09-22 14:52:01 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1259)
+
+

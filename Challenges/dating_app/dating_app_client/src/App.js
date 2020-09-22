@@ -62,11 +62,11 @@ export default function App() {
   return (
       <div className="App">
         <div className="container">
-          <nav><Daters /></nav>
+          <nav><Daters users={users} /></nav>
           <main>
           <h1>Hello Dating World</h1> 
         </main>
-        <aside><Daters /></aside>
+        <aside><Daters users={users} /></aside>
         </div>
         <footer>
         <form onSubmit={handleSubmit}>
@@ -96,7 +96,7 @@ export default function App() {
       />
       <label htmlFor="ltl">Likes to Laugh</label>
       <input
-        type="boolean"
+        type="checkbox"
         id="ltl" value={formInputs.ltl}
         onChange={handleChange}
       />

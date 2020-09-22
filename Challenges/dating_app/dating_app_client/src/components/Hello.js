@@ -6,7 +6,7 @@ export default function Daters (props) {
         <div>
             
     
-        {this.props.users.map(user =>{
+        {props.users.map(user =>{
 
           return (
             <div key={user.id} className="dater">
