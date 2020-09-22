@@ -9,7 +9,7 @@ export default function App() {
           <main>
           <h1>Hello Dating World</h1> 
         </main>
-        <aside></aside>
+        <aside><Daters /></aside>
         </div>
         <footer/>
       </div>
