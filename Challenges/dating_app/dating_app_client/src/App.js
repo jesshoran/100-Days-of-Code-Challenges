@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import Daters from './components/Hello.js'
+import Daters from './components/Hello'
 
 export default function App() {
-  const [daters, setDaters] = useState([])
+  const [users, setUsers] = useState([])
   const [formInputs, updateFormInputs] = useState({
     name: '',
     starsign: '',
@@ -12,11 +12,11 @@ export default function App() {
     ltl: false
   })
 
-  const getDaters = async () => {
+  const getUsers = async () => {
     try{
     const response = await fetch('http://localhost:3000/users')
     const data = await response.json();
-    setDaters(data)
+    setUsers(data)
     console.log(data);
     }catch(error){
      console.error(error);
@@ -27,14 +27,14 @@ export default function App() {
     ()=>{
       (
         async function (){
-           await getDaters();
+           await getUsers();
         }
       )()
     }, [])
 
     const handleChange = (event) => {
       const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value })
-      updateFormInputs(updatedFormInputs)
+      updateFormInputs(updatedFormInputs);
     }
   
     const handleSubmit = async (event) => {
@@ -44,7 +44,7 @@ export default function App() {
           'http://localhost:3000/users',
           formInputs
         );
-        const createdDater = response.data
+        const createdUser = response.data
         await updateFormInputs({
           name: '',
           starsign: '',
@@ -52,7 +52,7 @@ export default function App() {
           img: '',
           ltl: false
         })
-        await setDaters([createdDater, ...daters])
+        await setUsers([createdUser, ...users])
       }catch(error){
         console.error(error)
       }
