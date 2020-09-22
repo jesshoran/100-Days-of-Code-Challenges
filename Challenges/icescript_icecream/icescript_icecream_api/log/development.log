@@ -1,0 +1,407 @@
+  [1m[35m (84.7ms)[0m  [1m[35mCREATE DATABASE "icescript_icecream_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (105.7ms)[0m  [1m[35mCREATE DATABASE "icescript_icecream_api_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8499138749228399895)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIceCreams (20200922221705)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ice_creams" ("id" bigserial primary key, "name" character varying, "description" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200922221705"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePints (20200922221711)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "pints" ("id" bigserial primary key, "pints_sold" integer, "pints_made" integer, "profit_per_pint" decimal, "month" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200922221711"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddForeignKeysToPints (20200922222330)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "pints" ADD "icecream_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200922222330"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-22 22:29:44.748484"], ["updated_at", "2020-09-22 22:29:44.748484"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8499138749228399895)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8499138749228399895)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeysToPints (20200922222330)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mALTER TABLE "pints" DROP COLUMN "icecream_id"[0m
+  [1m[36mprimary::SchemaMigration Destroy (1.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200922222330"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8499138749228399895)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8499138749228399895)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeysToPints (20200922222330)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "pints" ADD "ice_cream_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200922222330"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8499138749228399895)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIceCream Create (0.9ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bratwurst"], ["description", "Meaty, with mustard and Kraut"], ["created_at", "2020-09-22 22:45:25.784385"], ["updated_at", "2020-09-22 22:45:25.784385"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Black Licorice"], ["description", "Like the candy, but more."], ["created_at", "2020-09-22 22:45:25.788937"], ["updated_at", "2020-09-22 22:45:25.788937"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-09-22 15:45:45 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.2ms | Allocations: 409)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 2255)
+
+
+Started GET "/icecream" for ::1 at 2020-09-22 15:45:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/icecream"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-09-22 15:45:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/icecreams"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/ice_creams" for ::1 at 2020-09-22 15:46:01 -0700
+Processing by IceCreamsController#index as HTML
+  [1m[36mIceCream Load (1.0ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 7.2ms | Allocations: 5288)
+
+
+  [1m[36mIceCream Load (0.4ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.9ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 1000], ["pints_made", 2000], ["profit_per_pint", "0.5"], ["month", "January"], ["created_at", "2020-09-22 22:49:11.761852"], ["updated_at", "2020-09-22 22:49:11.761852"], ["ice_cream_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.4ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 220], ["pints_made", 200], ["profit_per_pint", "0.2"], ["month", "February"], ["created_at", "2020-09-22 22:49:12.047329"], ["updated_at", "2020-09-22 22:49:12.047329"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 10], ["pints_made", 20], ["profit_per_pint", "0.1"], ["month", "March"], ["created_at", "2020-09-22 22:49:12.302588"], ["updated_at", "2020-09-22 22:49:12.302588"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 210], ["pints_made", 20], ["profit_per_pint", "0.1"], ["month", "April"], ["created_at", "2020-09-22 22:49:12.569072"], ["updated_at", "2020-09-22 22:49:12.569072"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.4ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 400], ["pints_made", 200], ["profit_per_pint", "0.2"], ["month", "May"], ["created_at", "2020-09-22 22:49:12.822602"], ["updated_at", "2020-09-22 22:49:12.822602"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.4ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 1000], ["pints_made", 100], ["profit_per_pint", "0.5"], ["month", "June"], ["created_at", "2020-09-22 22:49:13.120905"], ["updated_at", "2020-09-22 22:49:13.120905"], ["ice_cream_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 5000], ["pints_made", 4000], ["profit_per_pint", "0.9"], ["month", "July"], ["created_at", "2020-09-22 22:49:13.405476"], ["updated_at", "2020-09-22 22:49:13.405476"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.4ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 9000], ["pints_made", 5000], ["profit_per_pint", "0.9"], ["month", "August"], ["created_at", "2020-09-22 22:49:13.684007"], ["updated_at", "2020-09-22 22:49:13.684007"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 1000], ["pints_made", 1000], ["profit_per_pint", "0.5"], ["month", "September"], ["created_at", "2020-09-22 22:49:13.965176"], ["updated_at", "2020-09-22 22:49:13.965176"], ["ice_cream_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 500], ["pints_made", 1000], ["profit_per_pint", "0.4"], ["month", "October"], ["created_at", "2020-09-22 22:49:14.247667"], ["updated_at", "2020-09-22 22:49:14.247667"], ["ice_cream_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 400], ["pints_made", 200], ["profit_per_pint", "0.3"], ["month", "November"], ["created_at", "2020-09-22 22:49:14.518698"], ["updated_at", "2020-09-22 22:49:14.518698"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.4ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 100], ["pints_made", 200], ["profit_per_pint", "0.1"], ["month", "December"], ["created_at", "2020-09-22 22:49:14.796456"], ["updated_at", "2020-09-22 22:49:14.796456"], ["ice_cream_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 10000], ["pints_made", 20000], ["profit_per_pint", "1.5"], ["month", "January"], ["created_at", "2020-09-22 22:49:15.077954"], ["updated_at", "2020-09-22 22:49:15.077954"], ["ice_cream_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 9000], ["pints_made", 1000], ["profit_per_pint", "0.5"], ["month", "February"], ["created_at", "2020-09-22 22:49:15.354401"], ["updated_at", "2020-09-22 22:49:15.354401"], ["ice_cream_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPint Create (0.3ms)[0m  [1m[32mINSERT INTO "pints" ("pints_sold", "pints_made", "profit_per_pint", "month", "created_at", "updated_at", "ice_cream_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["pints_sold", 8000], ["pints_made", 4000], ["profit_per_pint", "0.5"], ["month", "March"], ["created_at", "2020-09-22 22:49:32.509714"], ["updated_at", "2020-09-22 22:49:32.509714"], ["ice_cream_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPint Load (0.4ms)[0m  [1m[34mSELECT "pints".* FROM "pints" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPint Load (0.3ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1 LIMIT $2[0m  [["ice_cream_id", 1], ["LIMIT", 11]]
+  [1m[36mPint Load (0.3ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1 LIMIT $2[0m  [["ice_cream_id", 2], ["LIMIT", 11]]
+Started GET "/ice_creams" for ::1 at 2020-09-22 16:11:48 -0700
+Processing by IceCreamsController#index as HTML
+  [1m[36mIceCream Load (0.7ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.7ms | Allocations: 4389)
+
+
+Started GET "/pints" for ::1 at 2020-09-22 16:11:56 -0700
+Processing by PintsController#index as HTML
+  [1m[36mPint Load (0.7ms)[0m  [1m[34mSELECT "pints".* FROM "pints"[0m
+  ↳ app/controllers/pints_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 10.4ms | ActiveRecord: 8.5ms | Allocations: 7941)
+
+
+Started GET "/ice_creams" for ::1 at 2020-09-22 16:12:03 -0700
+Processing by IceCreamsController#index as HTML
+  [1m[36mIceCream Load (0.4ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1038)
+
+
+Started GET "/ice_creams/1" for ::1 at 2020-09-22 16:12:06 -0700
+Processing by IceCreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1169)
+
+
+Started GET "/ice_creams/1" for ::1 at 2020-09-22 16:13:29 -0700
+Processing by IceCreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+  [1m[36mPint Load (0.2ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1[0m  [["ice_cream_id", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:13:in `show'
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 9.8ms | Allocations: 13194)
+
+
+Started GET "/ice_creams/2" for ::1 at 2020-09-22 16:18:06 -0700
+Processing by IceCreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+  [1m[36mPint Load (0.3ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1[0m  [["ice_cream_id", 2]]
+  ↳ app/controllers/ice_creams_controller.rb:13:in `show'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 9.3ms | Allocations: 10298)
+
+
+Started GET "/locations" for 127.0.0.1 at 2020-09-22 16:29:33 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/locations" for 127.0.0.1 at 2020-09-22 16:33:24 -0700
+Started GET "/ice_creams/1" for 127.0.0.1 at 2020-09-22 16:33:24 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IceCreamsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mIceCream Load (0.5ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+  [1m[36mPint Load (0.4ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1[0m  [["ice_cream_id", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:13:in `show'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 11.9ms | Allocations: 14814)
+
+
+Started GET "/ice_creams" for 127.0.0.1 at 2020-09-22 16:34:37 -0700
+Processing by IceCreamsController#index as */*
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1061)
+
+
+Started GET "/ice_creams/1" for 127.0.0.1 at 2020-09-22 16:34:37 -0700
+Processing by IceCreamsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+  [1m[36mPint Load (0.3ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1[0m  [["ice_cream_id", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:13:in `show'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 3185)
+
+
+Started GET "/ice_creams" for 127.0.0.1 at 2020-09-22 16:38:26 -0700
+Processing by IceCreamsController#index as */*
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2020-09-22 16:38:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/locations/1"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/ice_creams" for 127.0.0.1 at 2020-09-22 16:44:12 -0700
+Processing by IceCreamsController#index as */*
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2020-09-22 16:44:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/locations/1"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/ice_creams" for 127.0.0.1 at 2020-09-22 16:44:36 -0700
+Processing by IceCreamsController#index as */*
+  [1m[36mIceCream Load (0.4ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/controllers/ice_creams_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1041)
+
+
+Started GET "/ice_creams/1" for 127.0.0.1 at 2020-09-22 16:44:36 -0700
+Processing by IceCreamsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:19:in `set_ice_cream'
+  [1m[36mPint Load (0.2ms)[0m  [1m[34mSELECT "pints".* FROM "pints" WHERE "pints"."ice_cream_id" = $1[0m  [["ice_cream_id", 1]]
+  ↳ app/controllers/ice_creams_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3167)
+
+
