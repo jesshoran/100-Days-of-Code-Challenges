@@ -12,19 +12,24 @@
 // class.  Contains should accept a 'data' argument
 // and return the Node in the tree with the same value.
 
+
 class Node {
-    constructor(data, left = null, right = null) {
+    constructor(data, name) {
         this.data = data;
-        this.left =  left;
-        this.right = right;
+        this.name = name;
+        this.children = []
     }
+
 }
 
-class BST {
-    constructor() {
-        this.root = null;
-    }
-    
-}
+const html = new Node('nothing', 'html')
+const body = new Node('stuff', 'body')
+const head = new Node('hello', 'head')
+const test = new Node('yo', 'test')
 
-module.exports = Node;
+html.children.push(body)
+html.children.push(head)
+
+console.log(html)
+
+
