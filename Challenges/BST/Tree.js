@@ -80,17 +80,67 @@ class Node {
       queue =[];
   queue.push(node);
 
-  while (queue.length){
-      node = queue.shift();
-      visited.push(node.data);
-      if (node.left) queue.push(node.left)
-      if (node.right) queue.push(node.right)
+  while(queue.length){
+    // console.log(`current node is : ${node.data}`)
+    // console.log(queue.map(node => node.data))
+    // console.log(visited)
+    node = queue.shift();
+    visited.push(node.data);
+    if (node.left) queue.push(node.left)
+    if (node.right) queue.push(node.right)
+    console.log(queue.map(node => node.data))
+    console.log(visited)
   }
-return visited
+  return visited;
+  }
+
+  dfsPost(){
+    /*
+    Make a variable that can house our visited nodes
+    Store the root of the BST in variable
+    Push the values of the node houses the visited nodes
+    if the node has a left property recursively call pur function to travese the left
+    if the node has a right value we are going to recursively traverse the right tree
+    */
+    const visited = []
+    const traverse = (node)=> {
+      if (node.left) traverse(node.left)
+      if(node.right) traverse(node.right)
+      visited.push(node.data)
+    }
+    traverse(this.root)
+    return visited
+  }
+  dfsIn(){
+    /*
+    Make a variable that can house our visited nodes
+    Store the root of the BST in variable
+    Push the values of the node houses the visited nodes
+    if the node has a left property recursively call pur function to travese the left
+    if the node has a right value we are going to recursively traverse the right tree
+    */
+    const visited = []
+    const traverse = (node)=> {
+      if (node.left) traverse(node.left)
+      visited.push(node.data)
+      if(node.right) traverse(node.right)
+    }
+    traverse(this.root)
+    return visited
+  }
+}
 
 
-  }
-  module.exports = {
+module.exports = {
     Node,
     BST
   }
+  const tree = new BST()
+  tree.insert(9)
+  tree.insert(6)
+  tree.insert(15)
+  tree.insert(3)
+  tree.insert(8)
+  tree.insert(20)
+  console.log(tree.bfs(),
+  tree.dfsPre(), tree.dfsPost(), tree.dfsIn())
