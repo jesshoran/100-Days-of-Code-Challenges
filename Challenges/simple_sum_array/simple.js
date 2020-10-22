@@ -30,9 +30,17 @@
 // 31
 
 // take elements from
+//loop over the array, adding +=
 
-// .reduce to split the array and add the integers together
 
-function simpleArraySum(ar) {
-    return ar.reduce((a, b) => a + b);
+let sum = 0;
+const sumArray = (array) => {
+  for(let i = 0; i <= array.length; i++){
+    sum += i
   }
+
+  console.log(sum);
+  return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]))
