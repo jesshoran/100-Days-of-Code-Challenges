@@ -55,3 +55,35 @@ const sameSame = (arr1, arr2) => {
 }
 
 console.log(sameSame([1,2,3,2,5], [9,1,4,4,11]))
+
+
+// ANAGRAMS
+// Given 2 strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase or name formed by rearranging the letters of another.
+
+//check to see if they have the same number of letters, otherwise false
+//see if they have the same number of each letter - frequency counter
+
+const anagrams = (str1, str2) => {
+    if (str1.length !== str2.length) {
+        return false
+    }
+    let fCounter1 = {}
+    let fCounter2 = {}
+    for (let val of str1) {
+        fCounter1[val] = fCounter1[val] + 1 || 1
+    } 
+    for (let val of str2) {
+        fCounter2[val] = fCounter2[val] + 1 || 1
+    }
+    for (let key in fCounter1) {
+        if (!(key in fCounter2)) {
+            return false
+        } if (fCounter1[key] !== fCounter2[key]) {
+            return false
+        }
+    }
+    return true
+
+}
+
+console.log(anagrams("hello", "leloh"))
