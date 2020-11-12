@@ -65,3 +65,28 @@ function collectOddValues(arr){
 }
 
 collectOddValues([1,2,3,4,5,6,7,8,9])
+
+function power(base ,exp) {
+    if (exp === 0) return 1;
+    return base * power(base, exp-1)
+}
+
+function factorial(num){
+    if (num === 0) return 1;
+    return num * factorial(num - 1)
+ }
+
+ function productOfArray(arr) {
+    if(arr.length === 0) {
+        return 1;
+    }
+    return arr[0] * productOfArray(arr.slice(1));
+}
+console.log(productOfArray([1,2,3]))
+
+function fib(n){
+    if (n <= 2) return 1;
+    return fib(n-1) + fib(n-2);
+}
+
+console.log(fib(5))
