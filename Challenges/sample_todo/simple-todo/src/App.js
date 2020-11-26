@@ -1,51 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
+import Todo from './components/Todo.js'
+import TodoForm from './components/TodoForm.js'
 
-function Todo ( {todo, index, completeTodo, removeTodo} ) {
-  return(
-    <div style={{textDecoration: todo.isCompleted ? 'line-through' : '' }}
-    className="to-do">
-      {todo.text}
-      <div>
-        <button onClick={() => completeTodo(index)}>Complete</button>
-        <button onClick={() => removeTodo(index)}>Delete</button>
-      </div>
-    </div>
-  )
-}
 
-function TodoForm({addTodo}) {
-  const [value, setValue] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if(!value) return;
-    addTodo(value);
-    setValue('');
-  }
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input>
-    </form>
-  )
-}
 
 function App () {
-  const [todos, setTodos] = useState([
+  const [todos, setTodos] = useState([0
       //initial data
-    {
-      text: "Go to the store",
-      isCompleted: false
-    },
-    {
-      text: "Meet friend for happy hour",
-      isCompleted: false
-    },
-    {
-      text: "Get nails done",
-      isCompleted: false
-    }
+    // {
+    //   text: "Go to the store",
+    //   isCompleted: false
+    // },
+    // {
+    //   text: "Meet friend for happy hour",
+    //   isCompleted: false
+    // },
+    // {
+    //   text: "Get nails done",
+    //   isCompleted: false
+    // }
   ]);
 
   const addTodo = (text) => {
@@ -67,7 +43,7 @@ function App () {
 
   return (
     <div className="app">
-      <h1 className="jess">To-do List</h1>
+      <h1 className="jess">Jess' To-do List</h1>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo 
