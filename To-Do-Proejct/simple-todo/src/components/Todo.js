@@ -4,27 +4,25 @@ import React, { useState, useEffect } from 'react';
 export default function Todo ( props
   // {todo, index, completeTodo, removeTodo, day}
    ) {
+    // const [todos, setTodos] = useState([]);
 
-  const getTodos = async () => {
-    try {
-      const response = await fetch('http://localhost:3000/todos')
-      const data = await response.json()
-      console.log(data)
-    }catch (error) {
-      console.log(error)
-    }
-  }
-  useEffect(()=>{
-    (
-      async function () {
-        await getTodos()
-      }
-    )()
-  },[])
     
     return(
+
       <div> 
         <h1>To Do List</h1>
+        <div>
+              {props.todos.map( todo => {
+                  return  (
+                       <div key={todo.id} className="todo">
+                           <h3>{todo.task}</h3>
+                          {/* <p>{todo.day}</p>
+                          <p>{todo.department}</p>
+                          <small>{todo.date}</small> */}
+                       </div>
+                    )
+                })}
+            </div>
       {/* <div style={{textDecoration: todo.isCompleted ? 'line-through' : '' }}
       className="to-do">
         {todo.text}

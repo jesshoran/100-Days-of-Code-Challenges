@@ -4,9 +4,9 @@
   padding: 30px; 
 }
 
-.jess {
+.container {
   text-align: center;
-  color: white;
+  color: purple;
 }
 
 .todo-list {
@@ -25,9 +25,9 @@
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   display: flex;
-  font-size: 100px;
+  font-size: 16px;
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 3px 10px;
-  color: white;
+  color: blueviolet;
 }
