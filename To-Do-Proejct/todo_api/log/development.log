@@ -730,3 +730,63 @@ Processing by TodosController#index as */*
 Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.7ms | Allocations: 1438)
 
 
+Started POST "/todos" for ::1 at 2020-11-28 17:19:31 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"", "day"=>"", "date"=>"", "department"=>"", "todo"=>{"task"=>"", "day"=>"", "date"=>"", "department"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", ""], ["day", ""], ["date", ""], ["department", ""], ["created_at", "2020-11-29 01:19:31.108866"], ["updated_at", "2020-11-29 01:19:31.108866"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 1.1ms | ActiveRecord: 1.6ms | Allocations: 2608)
+
+
+Started POST "/todos" for ::1 at 2020-11-28 17:21:52 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"", "day"=>"", "date"=>"", "department"=>"", "todo"=>{"task"=>"", "day"=>"", "date"=>"", "department"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", ""], ["day", ""], ["date", ""], ["department", ""], ["created_at", "2020-11-29 01:21:52.130773"], ["updated_at", "2020-11-29 01:21:52.130773"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 2582)
+
+
+Started GET "/todos" for ::1 at 2020-11-28 17:22:18 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms | Allocations: 1679)
+
+
+Started GET "/todos" for ::1 at 2020-11-28 17:30:23 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.7ms | Allocations: 1704)
+
+
+Started GET "/todos" for ::1 at 2020-11-28 17:30:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1629)
+
+
+  [1m[36mTodo Load (1.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (2.7ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (1.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (1.6ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m

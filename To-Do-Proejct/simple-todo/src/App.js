@@ -90,13 +90,32 @@ function App () {
 
             <form onSubmit={handleSubmit}>
        <label htmlFor="task">Task:</label>
-       <input type="text" id="task" />
+       <input 
+       type="text" 
+       id="task"
+       value={formInputs.task} 
+       onChange={handleChange}/>
            <label htmlFor="day">Day:</label>
-         <input type="text" id="day" />
+         <input 
+         type="text" 
+         id="day" 
+         value={formInputs.day} 
+          onChange={handleChange}
+         />
           <label htmlFor="date">Date:</label>
-         <input type="text" id="date" />
+         <input 
+         type="text" 
+         id="date" 
+         value={formInputs.date} 
+          onChange={handleChange}
+         />
             <label htmlFor="department">Department</label>
-            <input type="text" id="department" />
+            <input 
+            type="text" 
+            id="department"
+            value={formInputs.department} 
+       onChange={handleChange}
+            />
           <input type="submit" className="submit" />
        {/* <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input> */}
        </form>
