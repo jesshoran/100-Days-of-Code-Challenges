@@ -15,6 +15,7 @@ export default function Todo ( props
               {props.todos.map( todo => {
                   return  (
                        <div key={todo.id} className="todo">
+                         <h2>{todo.day}</h2>
                            <h3>{todo.task}</h3>
                           {/* <p>{todo.day}</p>
                           <p>{todo.department}</p>
