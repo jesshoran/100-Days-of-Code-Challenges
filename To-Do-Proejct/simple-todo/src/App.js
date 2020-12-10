@@ -89,39 +89,45 @@ function App () {
           </div>
 
             <form onSubmit={handleSubmit}>
-       <label htmlFor="task">Task:</label>
-       <input 
-       type="text" 
-       id="task"
-       value={formInputs.task} 
-       onChange={handleChange}/>
-           <label htmlFor="day">Day:</label>
-         <select name="day" value={formInputs.day} 
-          onChange={handleChange}>
-         <option value="monday">Monday</option>
-         <option value="tuesday">Tuesday</option>
-         <option value="wednesday">Wednesday</option>
-         <option value="thursday">Thursday</option>
-         <option value="friday">Friday</option>
-         <option value="saturday">Saturday</option>
-         <option value="sunday">Sunday</option>
-          </select> 
-          <label htmlFor="date">Date:</label>
-         <input 
-         type="text" 
-         id="date" 
-         value={formInputs.date} 
-          onChange={handleChange}
-         />
-            <label htmlFor="department">Department</label>
-            <select name="department" value={formInputs.department} 
-          onChange={handleChange}>
-         <option value="work">Work</option>
-         <option value="personal">Personal</option>
-         <option value="wednesday">Other</option>
-          </select> 
-          <input type="submit" className="submit" />
-       {/* <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input> */}
+              <label htmlFor="task">Task:</label>
+                <input 
+                type="text" 
+                id="task"
+                value={formInputs.task} 
+                    onChange={handleChange}/>
+              <label htmlFor="day">Day:</label>
+                <select name="day" type="text" value={formInputs.day} 
+                  onChange={handleChange}>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="friday">Friday</option>
+                  <option value="saturday">Saturday</option>
+                  <option value="sunday">Sunday</option>
+                </select>  
+              <label htmlFor="date">Date:</label>
+                <input 
+                type="text" 
+                id="date" 
+                value={formInputs.date} 
+                  onChange={handleChange}
+                />
+              <label htmlFor="department">Department:</label>
+                <select name="department" value={formInputs.department} 
+                onChange={handleChange}>
+                  <option value="work">Work</option>
+                  <option value="personal">Personal</option>
+                  <option value="other">Other</option>
+              </select> 
+                <input 
+                 type="text" 
+                 id="department" 
+                 value={formInputs.department} 
+                onChange={handleChange}
+              />
+            <input type="submit" className="submit" />
+        {/* <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input> */}
        </form>
       </div>
     </div>
