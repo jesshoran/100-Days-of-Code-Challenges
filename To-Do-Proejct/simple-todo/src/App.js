@@ -13,6 +13,7 @@ function App () {
     date: '',
     department: ''
   });
+  
   const getTodos = async () => {
     try {
       const response = await fetch('http://localhost:3000/todos')
@@ -55,10 +56,6 @@ function App () {
   }
 
   
-  // const addTodo = (text) => {
-  //   const newTodos = [...todos, {text}];
-  //   setTodos(newTodos);
-  // };
 
   // const completeTodo = (index) => {
   //   const newTodos = [...todos];
@@ -94,18 +91,13 @@ function App () {
                 type="text" 
                 id="task"
                 value={formInputs.task} 
-                    onChange={handleChange}/>
+                onChange={handleChange}/>
               <label htmlFor="day">Day:</label>
-                <select name="day" type="text" value={formInputs.day} 
-                  onChange={handleChange}>
-                  <option value="monday">Monday</option>
-                  <option value="tuesday">Tuesday</option>
-                  <option value="wednesday">Wednesday</option>
-                  <option value="thursday">Thursday</option>
-                  <option value="friday">Friday</option>
-                  <option value="saturday">Saturday</option>
-                  <option value="sunday">Sunday</option>
-                </select>  
+                <input 
+                name="day" 
+                type="text" 
+                value={formInputs.day} 
+                onChange={handleChange}/>
               <label htmlFor="date">Date:</label>
                 <input 
                 type="text" 
@@ -113,19 +105,13 @@ function App () {
                 value={formInputs.date} 
                   onChange={handleChange}
                 />
-              <label htmlFor="department">Department:</label>
-                <select name="department" value={formInputs.department} 
-                onChange={handleChange}>
-                  <option value="work">Work</option>
-                  <option value="personal">Personal</option>
-                  <option value="other">Other</option>
-              </select> 
+              <label htmlFor="department">Work, Personal, Other?</label>
                 <input 
-                 type="text" 
-                 id="department" 
-                 value={formInputs.department} 
-                onChange={handleChange}
-              />
+                name="department" 
+                value={formInputs.department} 
+                onChange={handleChange}/>
+               
+                
             <input type="submit" className="submit" />
         {/* <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input> */}
        </form>
