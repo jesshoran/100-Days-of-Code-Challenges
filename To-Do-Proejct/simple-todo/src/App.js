@@ -9,7 +9,6 @@ function App () {
   const [todos, setTodos] = useState([]);
   const [formInputs, updateFormInputs] = useState({
     task: '',
-    day: '',
     date: '',
     department: ''
   });
@@ -92,12 +91,7 @@ function App () {
                 id="task"
                 value={formInputs.task} 
                 onChange={handleChange}/>
-              <label htmlFor="day">Day:</label>
-                <input 
-                name="day" 
-                type="text" 
-                value={formInputs.day} 
-                onChange={handleChange}/>
+              
               <label htmlFor="date">Date:</label>
                 <input 
                 type="text" 
@@ -107,13 +101,13 @@ function App () {
                 />
               <label htmlFor="department">Work, Personal, Other?</label>
                 <input 
-                name="department" 
+                id="department" 
+                type="text"
                 value={formInputs.department} 
                 onChange={handleChange}/>
                
                 
             <input type="submit" className="submit" />
-        {/* <input text="text" className="input" value={value} onChange={e => setValue(e.target.value)}></input> */}
        </form>
       </div>
     </div>

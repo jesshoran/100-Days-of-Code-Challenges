@@ -1071,3 +1071,493 @@ Processing by TodosController#index as */*
 Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 1.5ms | Allocations: 1723)
 
 
+  [1m[36mTodo Load (1.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (8.7ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.2ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "todos"[0m
+Started GET "/todos" for ::1 at 2020-12-11 16:56:45 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 1.0ms | Allocations: 924)
+
+
+Started GET "/todos" for ::1 at 2020-12-11 16:58:15 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 849)
+
+
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6758441842580343510)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveDayFromTodos (20201212010356)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.6ms)[0m  [1m[35mALTER TABLE "todos" DROP COLUMN "day"[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201212010356"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6758441842580343510)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/todos" for ::1 at 2020-12-11 17:51:42 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.0ms | Allocations: 1439)
+
+
+Started GET "/todos" for ::1 at 2020-12-11 17:53:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 847)
+
+
+Started POST "/todos" for ::1 at 2020-12-11 17:53:59 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"Work on to-do app", "date"=>"12/11/2020", "department"=>"Work", "todo"=>{"task"=>"Work on to-do app", "date"=>"12/11/2020", "department"=>"Work"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (6.8ms)[0m  [1m[32mINSERT INTO "todos" ("task", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "Work on to-do app"], ["date", "12/11/2020"], ["department", "Work"], ["created_at", "2020-12-12 01:53:59.090911"], ["updated_at", "2020-12-12 01:53:59.090911"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 39ms (Views: 3.4ms | ActiveRecord: 10.3ms | Allocations: 5913)
+
+
+Started POST "/todos" for ::1 at 2020-12-11 17:55:08 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (14.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at noon"], ["day", ""], ["date", "12/11/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:08.881605"], ["updated_at", "2020-12-12 01:55:08.881605"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 14.8ms | Allocations: 2543)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:55:09 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.9ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at noon"], ["day", ""], ["date", "12/11/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:09.199103"], ["updated_at", "2020-12-12 01:55:09.199103"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.3ms | Allocations: 4830)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:55:11 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at noon"], ["day", ""], ["date", "12/11/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:11.409628"], ["updated_at", "2020-12-12 01:55:11.409628"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 2533)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:55:16 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at noon", "day"=>"", "date"=>"12/11/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at noon"], ["day", ""], ["date", "12/11/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:16.077356"], ["updated_at", "2020-12-12 01:55:16.077356"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:55:30 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:30.838883"], ["updated_at", "2020-12-12 01:55:30.838883"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:55:35 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:55:35.557906"], ["updated_at", "2020-12-12 01:55:35.557906"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:57:03 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (8.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:57:03.165243"], ["updated_at", "2020-12-12 01:57:03.165243"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 8.8ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started GET "/todos" for ::1 at 2020-12-11 17:57:04 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 975)
+
+
+Started POST "/todos" for ::1 at 2020-12-11 17:57:15 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "date"=>"12/10/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "date"=>"12/10/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("task", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["date", "12/10/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:57:15.652728"], ["updated_at", "2020-12-12 01:57:15.652728"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2553)
+
+
+Started POST "/todos" for ::1 at 2020-12-11 17:58:13 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:13.483987"], ["updated_at", "2020-12-12 01:58:13.483987"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:15 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:15.909463"], ["updated_at", "2020-12-12 01:58:15.909463"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:16 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.5ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:16.306878"], ["updated_at", "2020-12-12 01:58:16.306878"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:16 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:16.585315"], ["updated_at", "2020-12-12 01:58:16.585315"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.2ms | Allocations: 4979)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:16 -0800
+Started POST "/todos" for ::1 at 2020-12-11 17:58:16 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:16.833944"], ["updated_at", "2020-12-12 01:58:16.833944"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.9ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:16.835620"], ["updated_at", "2020-12-12 01:58:16.835620"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 3.0ms | Allocations: 8582)
+
+
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.9ms | Allocations: 9269)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:17 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (5.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:17.319074"], ["updated_at", "2020-12-12 01:58:17.319074"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 6.2ms | Allocations: 18143)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:17 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:17.812695"], ["updated_at", "2020-12-12 01:58:17.812695"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:22 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:22.804979"], ["updated_at", "2020-12-12 01:58:22.804979"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:23 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:23.498921"], ["updated_at", "2020-12-12 01:58:23.498921"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 2530)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:23 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:23.716958"], ["updated_at", "2020-12-12 01:58:23.716958"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (6.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.5ms | Allocations: 17169)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started POST "/todos" for ::1 at 2020-12-11 17:58:23 -0800
+Started POST "/todos" for ::1 at 2020-12-11 17:58:23 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+Processing by TodosController#create as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  Parameters: {"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "day"=>"", "date"=>"12/12/2020", "department"=>"Personal"}}
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:23.961762"], ["updated_at", "2020-12-12 01:58:23.961762"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (1.5ms)[0m  [1m[32mINSERT INTO "todos" ("task", "day", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["day", ""], ["date", "12/12/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:58:23.964163"], ["updated_at", "2020-12-12 01:58:23.964163"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.3ms | Allocations: 9671)
+
+
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 2.4ms | Allocations: 121119)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "day" of relation "todos" does not exist
+LINE 1: INSERT INTO "todos" ("task", "day", "date", "department", "c...
+                                     ^
+):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started GET "/todos" for ::1 at 2020-12-11 17:58:26 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."date" ASC[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.2ms | Allocations: 1161)
+
+
+Started POST "/todos" for ::1 at 2020-12-11 17:59:08 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at 10:45", "date"=>"12/11/2020", "department"=>"Personal", "todo"=>{"task"=>"OTF at 10:45", "date"=>"12/11/2020", "department"=>"Personal"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.7ms)[0m  [1m[32mINSERT INTO "todos" ("task", "date", "department", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "OTF at 10:45"], ["date", "12/11/2020"], ["department", "Personal"], ["created_at", "2020-12-12 01:59:08.385025"], ["updated_at", "2020-12-12 01:59:08.385025"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 2554)
+
+
