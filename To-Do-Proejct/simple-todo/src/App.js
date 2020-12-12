@@ -44,7 +44,6 @@ function App () {
       const createdTodos = response.data
       await updateFormInputs({
         task: '',
-        day: '',
         date: '',
         department: ''
       })
