@@ -10,14 +10,15 @@ export default function Todo ( props
     return(
 
       <div> 
-        <h1>Test</h1>
+        <h1>Sunday</h1>
         <div className="bydate">
+          
               {props.todos.map( todo => {
                   return  (
                        <div key={todo.id} className="todo">
-                         <h2>{todo.date}</h2>
-                           {/* <h3>{todo.task}</h3>
-                            <h4>{todo.department}</h4> */}
+                         {/* {todo.day}</h2> */}
+                           <h3>{todo.task}</h3>
+                            <h4>{todo.department}</h4>
                        </div>
                     )
                 })}

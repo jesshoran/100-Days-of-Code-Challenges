@@ -3,7 +3,7 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
-    @todos = Todo.all.order(:date)
+    @todos = Todo.all
 
     render json: @todos
   end
@@ -46,6 +46,6 @@ class TodosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def todo_params
-      params.require(:todo).permit(:task, :day, :date, :department)
+      params.require(:todo).permit(:task, :day, :department)
     end
 end
