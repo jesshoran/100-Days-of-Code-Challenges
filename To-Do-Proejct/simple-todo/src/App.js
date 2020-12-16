@@ -10,9 +10,13 @@ function App () {
   const [formInputs, updateFormInputs] = useState({
     task: '',
     department: '',
-    day: ''
+    day: '',
+    isCompleted: false,
   });
   
+
+
+
   const getTodos = async () => {
     try {
       const response = await fetch('http://localhost:3000/todos')
@@ -45,8 +49,10 @@ function App () {
       await updateFormInputs({
         task: '',
         department: '',
-        day: ''
+        day: '',
+        isCompleted: false
       })
+      // const [isCompleted, setIsCompleted] = useState(false);
       await setTodos([createdTodos, ...todos])
     }catch(error){
       console.error(error)
@@ -55,9 +61,9 @@ function App () {
 
   
 
-  // const completeTodo = (index) => {
+  // const completeTodo = (id) => {
   //   const newTodos = [...todos];
-  //   newTodos[index].isCompleted = true;
+  //   newTodos[id].isCompleted = true;
   //   setTodos(newTodos)
   // }
 
@@ -102,6 +108,12 @@ function App () {
                 id="department" 
                 type="text"
                 value={formInputs.department} 
+                onChange={handleChange}/>
+              <label htmlFor="isCompleted">Done?</label>
+                <input 
+                id="isCompleted" 
+                type="checkbox"
+                value={formInputs.isCompleted} 
                 onChange={handleChange}/>
                
                 

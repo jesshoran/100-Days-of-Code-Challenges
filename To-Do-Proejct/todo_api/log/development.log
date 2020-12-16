@@ -2509,3 +2509,320 @@ Processing by TodosController#index as */*
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1309)
 
 
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6758441842580343510)[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIsCompletedToTodos (20201216190602)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.2ms)[0m  [1m[35mALTER TABLE "todos" ADD "isCompleted" boolean[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201216190602"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6758441842580343510)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTodo Load (7.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.7ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 40]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.8ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Create (9.7ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day", "isCompleted") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "Apply to 2-3 jobs"], ["department", "Work"], ["created_at", "2020-12-16 19:07:56.692387"], ["updated_at", "2020-12-16 19:07:56.692387"], ["day", "Monday"], ["isCompleted", false]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day", "isCompleted") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "Go to Orangetheory"], ["department", "Personal"], ["created_at", "2020-12-16 19:07:56.715791"], ["updated_at", "2020-12-16 19:07:56.715791"], ["day", "Monday"], ["isCompleted", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day", "isCompleted") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["task", "Order medicine"], ["department", "Personal"], ["created_at", "2020-12-16 19:07:56.719339"], ["updated_at", "2020-12-16 19:07:56.719339"], ["day", "Thursday"], ["isCompleted", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/todos" for ::1 at 2020-12-16 11:09:42 -0800
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (17.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 10.0ms | ActiveRecord: 17.4ms | Allocations: 4666)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:09:55 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1234)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 11:10:13 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"Work on to-do app", "department"=>"Work", "day"=>"Wednesday", "isCompleted"=>"false", "todo"=>{"task"=>"Work on to-do app", "department"=>"Work", "day"=>"Wednesday"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.7ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "Work on to-do app"], ["department", "Work"], ["created_at", "2020-12-16 19:10:13.913511"], ["updated_at", "2020-12-16 19:10:13.913511"], ["day", "Wednesday"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.8ms | ActiveRecord: 4.7ms | Allocations: 2600)
+
+
+Started GET "/" for ::1 at 2020-12-16 11:10:39 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 7)
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:10:44 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (16.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 3.6ms | ActiveRecord: 16.3ms | Allocations: 1368)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:13:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1370)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 11:13:36 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"test", "department"=>"Personal", "day"=>"Sunday", "isCompleted"=>"", "todo"=>{"task"=>"test", "department"=>"Personal", "day"=>"Sunday"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "test"], ["department", "Personal"], ["created_at", "2020-12-16 19:13:36.833654"], ["updated_at", "2020-12-16 19:13:36.833654"], ["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2540)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:13:41 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1503)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:13:47 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1503)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:13:55 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1505)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:14:10 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1505)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:14:15 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1505)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 11:14:28 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"JSW for Barry", "department"=>"Other", "day"=>"Saturday", "isCompleted"=>"false", "todo"=>{"task"=>"JSW for Barry", "department"=>"Other", "day"=>"Saturday"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (6.7ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "JSW for Barry"], ["department", "Other"], ["created_at", "2020-12-16 19:14:28.065160"], ["updated_at", "2020-12-16 19:14:28.065160"], ["day", "Saturday"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 0.5ms | ActiveRecord: 10.1ms | Allocations: 2540)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:14:30 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1638)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:14:31 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1638)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:17:24 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1640)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:26:09 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.7ms | Allocations: 1738)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:26:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1640)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:26:34 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1640)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:36:48 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 1.0ms | Allocations: 1738)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 11:37:05 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"Attend GA Webinar", "department"=>"Work", "day"=>"Tuesday", "todo"=>{"task"=>"Attend GA Webinar", "department"=>"Work", "day"=>"Tuesday"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (5.3ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "Attend GA Webinar"], ["department", "Work"], ["created_at", "2020-12-16 19:37:05.450337"], ["updated_at", "2020-12-16 19:37:05.450337"], ["day", "Tuesday"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 17ms (Views: 1.1ms | ActiveRecord: 9.9ms | Allocations: 2540)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:37:10 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1773)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 11:37:11 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1773)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 12:06:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.2ms | Allocations: 1870)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 14:50:49 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.8ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.8ms | Allocations: 1870)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:06:26 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.7ms | Allocations: 1870)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 15:06:41 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"Bool test", "department"=>"Other", "day"=>"Monday", "isCompleted"=>false, "todo"=>{"task"=>"Bool test", "department"=>"Other", "day"=>"Monday"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (6.1ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "Bool test"], ["department", "Other"], ["created_at", "2020-12-16 23:06:41.504389"], ["updated_at", "2020-12-16 23:06:41.504389"], ["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 64ms (Views: 1.4ms | ActiveRecord: 7.6ms | Allocations: 2542)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:06:47 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.6ms | Allocations: 1909)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:06:50 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1909)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:07:58 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1910)
+
+
+Started POST "/todos" for ::1 at 2020-12-16 15:08:11 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"anotha one", "department"=>"monday", "day"=>"Sunda", "isCompleted"=>false, "todo"=>{"task"=>"anotha one", "department"=>"monday", "day"=>"Sunda"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "anotha one"], ["department", "monday"], ["created_at", "2020-12-16 23:08:11.036235"], ["updated_at", "2020-12-16 23:08:11.036235"], ["day", "Sunda"]]
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 2540)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:08:18 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2043)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:08:20 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2043)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:13:30 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 2045)
+
+
+Started GET "/" for ::1 at 2020-12-16 15:13:35 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jesshoran/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 7)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 238)
+
+
+Started GET "/todos" for ::1 at 2020-12-16 15:13:38 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/controllers/todos_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.6ms | Allocations: 2045)
+
+

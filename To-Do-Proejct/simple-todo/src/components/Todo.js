@@ -5,7 +5,7 @@ export default function Todo ( props, todo, index
   // {todo, index, completeTodo, removeTodo, day}
    ) {
     const [todos, setTodos] = useState([]);
-    const completeTodo = (index) => {
+    const completeTodo = (index, todos, setTodos) => {
       const newTodos = [...todos];
       newTodos[index].isCompleted = true;
       setTodos(newTodos)

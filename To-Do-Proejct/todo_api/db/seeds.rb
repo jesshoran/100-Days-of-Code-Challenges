@@ -10,17 +10,21 @@ Todo.create([
 
 {"task": "Apply to 2-3 jobs",
 "day": "Monday",
-"department": "Work"
+"department": "Work",
+"isCompleted": "false"
+
 },
 
 {"task": "Go to Orangetheory",
 "day": "Monday",
-"department": "Personal"
+"department": "Personal",
+"isCompleted": "false"
 },
 
 {"task": "Order medicine",
 "day": "Thursday",
-"department": "Personal"
+"department": "Personal",
+"isCompleted": "false"
 },
 
 
