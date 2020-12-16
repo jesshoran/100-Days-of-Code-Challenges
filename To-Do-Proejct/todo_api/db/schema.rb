@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_12_184539) do
+ActiveRecord::Schema.define(version: 2020_12_16_020240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "todos", force: :cascade do |t|
     t.string "task"
-    t.string "date"
     t.string "department"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "day"
   end
 
 end

@@ -9,7 +9,7 @@ function App () {
   const [todos, setTodos] = useState([]);
   const [formInputs, updateFormInputs] = useState({
     task: '',
-    day: '',
+    date: '',
     department: ''
   });
   
@@ -44,7 +44,7 @@ function App () {
       const createdTodos = response.data
       await updateFormInputs({
         task: '',
-        day: '',
+        date: '',
         department: ''
       })
       await setTodos([createdTodos, ...todos])
@@ -91,11 +91,11 @@ function App () {
                 value={formInputs.task} 
                 onChange={handleChange}/>
               
-              <label htmlFor="day">Day:</label>
+              <label htmlFor="date">Day:</label>
                 <input 
                 type="text" 
-                id="day" 
-                value={formInputs.day} 
+                id="date" 
+                value={formInputs.date} 
                   onChange={handleChange}
                 />
               <label htmlFor="department">Work, Personal, Other?</label>

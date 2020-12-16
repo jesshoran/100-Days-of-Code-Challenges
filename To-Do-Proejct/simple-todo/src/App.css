@@ -1,7 +1,8 @@
 .app {
   background:#FE7F9C;
-  height: 100vh;
   padding: 30px; 
+  height: 100%;
+
 }
 
 .container {
