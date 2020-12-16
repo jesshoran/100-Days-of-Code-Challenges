@@ -6,3 +6,23 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Todo.create([
+
+{"task": "Apply to 2-3 jobs",
+"day": "Monday",
+"department": "Work"
+},
+
+{"task": "Go to Orangetheory",
+"day": "Monday",
+"department": "Personal"
+},
+
+{"task": "Order medicine",
+"day": "Thursday",
+"department": "Personal"
+},
+
+
+
+])
