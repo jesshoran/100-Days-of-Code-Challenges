@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Form, Col, Row } from 'react-bootstrap';
 import './App.css';
 import Todo from './components/Todo.js'
 import TodoForm from './components/TodoForm.js'
@@ -13,9 +14,6 @@ function App () {
     day: '',
     isCompleted: false,
   });
-  
-
-
 
   const getTodos = async () => {
     try {
@@ -35,6 +33,8 @@ function App () {
   },[])
 
   const handleChange = (event) => {
+    // const target = event.target
+    // const value = target.type === 'checkbox' ? target.checked : target.value;
     const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
     updateFormInputs(updatedFormInputs);
   }
@@ -50,7 +50,7 @@ function App () {
         task: '',
         department: '',
         day: '',
-        isCompleted: false
+        isCompleted: false,
       })
       // const [isCompleted, setIsCompleted] = useState(false);
       await setTodos([createdTodos, ...todos])
@@ -73,6 +73,8 @@ function App () {
   //   setTodos(newTodos);
   // }
 
+  const [checked, setChecked] = useState(false);
+
   return (
     <div className="app">
       <h1 className="container">Jess' Weekly To-do List</h1>
@@ -89,36 +91,75 @@ function App () {
           </Todo>
           </div>
 
-            <form onSubmit={handleSubmit}>
-              <label htmlFor="task">Task:</label>
-                <input 
-                type="text" 
-                id="task"
-                value={formInputs.task} 
-                onChange={handleChange}/>
-              
-              <label htmlFor="day">Day:</label>
-                <input 
-                type="text" 
-                id="day"
-                value={formInputs.date} 
-                onChange={handleChange}/>
-              <label htmlFor="department">Work, Personal, Other?</label>
-                <input 
-                id="department" 
-                type="text"
-                value={formInputs.department} 
-                onChange={handleChange}/>
-              <label htmlFor="isCompleted">Done?</label>
-                <input 
-                id="isCompleted" 
-                type="checkbox"
-                value={formInputs.isCompleted} 
-                onChange={handleChange}/>
-               
-                
-            <input type="submit" className="submit" />
-       </form>
+            <Form onSubmit={handleSubmit}>
+              <fieldset>
+         
+              <Form.Row xs={4} md={6} lg={12}>
+                <Col lg={5}>
+                  <Form.Group>
+                    <Form.Label htmlFor="task">Task:</Form.Label>
+                      <Form.Control 
+                      type="text" 
+                      id="task"
+                      value={formInputs.task} 
+                      onChange={handleChange}
+                      placeholder="Eat cake...cheat day!"/>
+                  </Form.Group>
+                  </Col>
+                <Col lg={3}>
+                  <Form.Group>
+                    <Form.Label htmlFor="day">Day:</Form.Label>
+                      <Form.Control
+                      as="select"
+                      // type="text" 
+                      id="day"
+                      value={formInputs.date} 
+                      onChange={handleChange}
+                      placeholder="Sunday">
+                        <option>Sunday</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        </Form.Control>
+                    </Form.Group >
+                    </Col>
+                 
+                <Col lg={3}>
+                    <Form.Group>
+                      <Form.Label htmlFor="department">Work, Personal, Other?</Form.Label>
+                      <Form.Control  
+                      id="department" 
+                      type="text"
+                      value={formInputs.department} 
+                      onChange={handleChange}
+                      placeholder="Personal"/>
+                    </Form.Group>
+                    </Col>
+                    <Col lg={1}>
+                 
+                    <Form.Group>
+                      <Form.Label htmlFor="isCompleted">Done?</Form.Label>
+                      <Form.Control  
+                      id="isCompleted" 
+                      type="checkbox"
+                      // defaultValue={false}
+                      checked={checked}
+                      onChange={e =>
+                        setChecked(!checked)
+                        }
+                      // value={formInputs.isCompleted} 
+                      onChange={handleChange}/>
+                  </Form.Group>
+                  </Col>
+           </Form.Row>
+           <Form.Row>  
+            <Form.Control type="submit" className="submit" />
+            </Form.Row> 
+            </fieldset> 
+       </Form>
       </div>
     </div>
   )

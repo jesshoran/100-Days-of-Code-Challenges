@@ -13,29 +13,28 @@ export default function Todo ( props, todo, index
     
     return(
 
-      <div className="tuesday"> 
+      <div className="container"> 
         <h1>Sunday</h1>
         <div className="byday">
-          
-              {props.todos.map( todo => {
-                
+          {props.todos.map( todo => {
+
+              console.log(todo)
                   return  (
                        <div key={todo.index} className="todo">
-                        <h3> {todo.day} </h3>
-                           <h3>{todo.task}</h3>
-                            <h4>{todo.department}</h4>
+                           <h5>{todo.task}</h5>
+                            <p>{todo.department}</p>
                             <div style={{textDecoration: todo.isCompleted ? 'line-through' : '' }}
                             className="completed">
                           <div>
                             <button onClick={() => completeTodo(todo)}>Complete</button>
                         {/* <button onClick={() => removeTodo(index)}>Delete</button> */}
                       </div>
-      </div>
-                       </div>
+                     </div>
+                   </div>
                     )
                 })}
             </div>
-      <div></div>
+
 
       </div>
       
