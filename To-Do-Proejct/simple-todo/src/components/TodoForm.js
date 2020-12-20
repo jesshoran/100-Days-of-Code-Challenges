@@ -15,16 +15,25 @@ function TodoForm(props) {
     const [checked, setChecked] = useState(false);
     const onClick = (event) => {
       setChecked(event.target.checked)
-      updateFormInputs(formInputs.isCompleted.checked)
+      // updateFormInputs(formInputs.isCompleted.checked)
       console.log(formInputs)
     };
     
 
     const handleChange = (event) => {
-      const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value }, { [event.target.id]: event.target.checked})
+      const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
       updateFormInputs(updatedFormInputs)
       // console.log(updatedFormInputs)
       }
+    
+    const handleChangeCheck = (event) => {
+      const value =
+      event.target.type === "checkbox" ? event.target.checked : event.target.value;
+       updateFormInputs({
+      ...formInputs,
+      [event.target.id]: value
+    })}
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -107,7 +116,7 @@ function TodoForm(props) {
                       type="checkbox"
                       value={formInputs.isCompleted}
                       checked={checked}
-                      onChange={handleChange}
+                      onChange={handleChangeCheck}
                       onClick={onClick}
                       
                       />
