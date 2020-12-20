@@ -11,10 +11,7 @@ function TodoForm(props) {
         isCompleted: false
       });
     const [checked, setChecked] = useState(false);
-    const onClick = (event) => setChecked(event.target.checked = !checked)
-    // useEffect(() => {
-    //   todos.isCompleted = setChecked(checked);
-    // });
+    const onClick = (event) => setChecked(event.target.checked)
 
     const handleChange = (event) => {
       const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
