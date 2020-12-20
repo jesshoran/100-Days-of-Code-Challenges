@@ -4,16 +4,22 @@ import { Form, Col, Row } from 'react-bootstrap';
 
 function TodoForm(props) {
     const [todos, setTodos] = useState([]);
-
     const [formInputs, updateFormInputs] = useState({
         task: '',
         department: '',
         day: '',
-        isCompleted: false,
+        isCompleted: false
       });
+    const [checked, setChecked] = useState(false);
+    const onClick = (event) => setChecked(event.target.checked = !checked)
+    // useEffect(() => {
+    //   todos.isCompleted = setChecked(checked);
+    // });
+
     const handleChange = (event) => {
       const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
-      updateFormInputs(updatedFormInputs);
+      updateFormInputs(updatedFormInputs)
+      console.log(updatedFormInputs)
       }
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -27,33 +33,23 @@ function TodoForm(props) {
             task: '',
             department: '',
             day: '',
-            isCompleted: false,
+            isCompleted: Boolean  
           })
           await setTodos([createdTodos, ...todos])
+          console.log(createdTodos)
         }catch(error){
           console.error(error)
         }
       }
 
-
+// why is it not rendering the page with the new information?
         return (
             <Form className="todo-form" onSubmit={handleSubmit}>
-        
-                 <Form.Control
-                  placeholder='Update your item'
-                  value={formInputs.task}
-                  onChange={handleChange}
-                  name='task'
-                  className='todo-input edit'
-                />
-                 <button onClick={handleSubmit} className='todo-button edit'>
-                   Update
-                </button>
-     
-        
+
               <fieldset>
-         
+
               <Form.Row xs={4} md={6} lg={12}>
+
                 <Col lg={5}>
                   <Form.Group>
                     <Form.Label htmlFor="task">Task:</Form.Label>
@@ -65,6 +61,7 @@ function TodoForm(props) {
                       placeholder="Eat cake...cheat day!"/>
                   </Form.Group>
                   </Col>
+
                 <Col lg={3}>
                   <Form.Group>
                     <Form.Label htmlFor="day">Day:</Form.Label>
@@ -74,7 +71,7 @@ function TodoForm(props) {
                       id="day"
                       value={formInputs.date} 
                       onChange={handleChange}
-                      placeholder="Sunday">
+                      placeholder="Select Day">
                         <option>Sunday</option>
                         <option>Monday</option>
                         <option>Tuesday</option>
@@ -104,15 +101,19 @@ function TodoForm(props) {
                       <Form.Control  
                       id="isCompleted" 
                       type="checkbox"
-                      // defaultValue={false}
-                     
-                      // value={formInputs.isCompleted} 
-                      onChange={handleChange}/>
-                  </Form.Group>
+                      onClick={onClick}
+                      checked={checked}
+                      value={formInputs.isCompleted}
+                      onChange={handleChange}
+                      />
+                     </Form.Group>
+{/* no value is being pushed for isCompleted */}
+
+               
                   </Col>
            </Form.Row>
            <Form.Row>  
-            <Form.Control type="submit" className="submit" />
+            <Form.Control type= "submit" className="submit" />
             </Form.Row> 
             </fieldset> 
  

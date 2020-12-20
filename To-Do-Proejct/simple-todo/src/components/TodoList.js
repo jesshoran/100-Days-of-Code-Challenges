@@ -3,7 +3,6 @@ import axios from 'axios';
 import TodoForm from './TodoForm';
 import Todo from './Todo'
 
-
 function TodoList ( props) {
     const [todos, setTodos] = useState([]);
     const getTodos = async () => {
@@ -23,25 +22,29 @@ function TodoList ( props) {
       )()
     },[])
 
-  
-
     
+
+    const showTodos = todos.map( todo => {
+        return (
+            <Todo 
+            key={todo.id}
+            todo={todo}
+            ></Todo>
+        )
+    })
+
     return(
 
         <>
         <h1>What's the Plan for Today?</h1>
-        <TodoForm />
-        <Todo todos={todos}
+        {showTodos}
+        <TodoForm 
         />
       </>
     );
   }
   
-    
-        
-      
-
-    export default TodoList
+export default TodoList
 
 
 
