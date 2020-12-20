@@ -46,7 +46,7 @@ function TodoForm(props) {
             task: '',
             department: '',
             day: '',
-            isCompleted: false  
+            isCompleted: Boolean  
           })
           await setTodos([createdTodos, ...todos])
           console.log(createdTodos)
@@ -136,4 +136,4 @@ function TodoForm(props) {
     )
 }
 
-export default TodoForm
+export default TodoForm;

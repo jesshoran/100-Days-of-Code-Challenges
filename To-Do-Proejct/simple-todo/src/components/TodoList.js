@@ -36,15 +36,13 @@ function TodoList ( props) {
     return(
 
         <>
-        <h1>What's the Plan for Today?</h1>
+        <h1>What's going on this week?</h1>
         {showTodos}
-        <TodoForm 
-        />
       </>
     );
   }
   
-export default TodoList
+export default TodoList;
 
 
 

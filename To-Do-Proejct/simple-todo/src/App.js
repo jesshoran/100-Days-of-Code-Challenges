@@ -3,14 +3,34 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import './App.css';
 import Todo from './components/Todo.js';
 import TodoForm from './components/TodoForm.js';
-import TodoList from './components/TodoList.js'
+import TodoList from './components/TodoList.js';
+import NavBar from './components/NavBar.js'
 
 
 function App () {
   return (
     <div className="app">
-          <TodoList/>
-          
+          <NavBar/>
+
+          <Switch>
+          <Route
+            path="/add"
+            render={() => {
+              return (
+                <TodoForm/>
+            );
+          }}
+          />   
+          <Route
+            path="/"
+            render={() => {
+              return (
+                <TodoList/>
+            );
+          }}
+          />   
+
+            </Switch>
     </div>
   );
 }
