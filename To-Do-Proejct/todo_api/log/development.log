@@ -5378,3 +5378,24 @@ Processing by TodosController#index as */*
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1635)
 
 
+Started GET "/todos" for ::1 at 2020-12-20 12:20:49 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:10:in `index'
+Completed 200 OK in 55ms (Views: 44.3ms | ActiveRecord: 1.2ms | Allocations: 5140)
+
+
+Started GET "/todos" for ::1 at 2020-12-20 12:25:22 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:10:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1352)
+
+
+Started GET "/todos" for ::1 at 2020-12-20 14:36:01 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.9ms | Allocations: 1473)
+
+
