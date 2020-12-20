@@ -4,19 +4,26 @@ import { Form, Col, Row } from 'react-bootstrap';
 
 function TodoForm(props) {
     const [todos, setTodos] = useState([]);
+
     const [formInputs, updateFormInputs] = useState({
         task: '',
         department: '',
         day: '',
         isCompleted: false
       });
+
     const [checked, setChecked] = useState(false);
-    const onClick = (event) => setChecked(event.target.checked)
+    const onClick = (event) => {
+      setChecked(event.target.checked)
+      updateFormInputs(formInputs.isCompleted.checked)
+      console.log(formInputs)
+    };
+    
 
     const handleChange = (event) => {
-      const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
+      const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value }, { [event.target.id]: event.target.checked})
       updateFormInputs(updatedFormInputs)
-      console.log(updatedFormInputs)
+      // console.log(updatedFormInputs)
       }
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -30,7 +37,7 @@ function TodoForm(props) {
             task: '',
             department: '',
             day: '',
-            isCompleted: Boolean  
+            isCompleted: false  
           })
           await setTodos([createdTodos, ...todos])
           console.log(createdTodos)
@@ -98,10 +105,11 @@ function TodoForm(props) {
                       <Form.Control  
                       id="isCompleted" 
                       type="checkbox"
-                      onClick={onClick}
-                      checked={checked}
                       value={formInputs.isCompleted}
+                      checked={checked}
                       onChange={handleChange}
+                      onClick={onClick}
+                      
                       />
                      </Form.Group>
 {/* no value is being pushed for isCompleted */}
