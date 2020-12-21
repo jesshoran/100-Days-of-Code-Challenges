@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
 import axios from 'axios';
 import { Form, Col, Row } from 'react-bootstrap';
+import Jumbotron from 'react-bootstrap/Jumbotron'
+
 
 function TodoForm(props) {
     const [todos, setTodos] = useState([]);
@@ -57,6 +59,8 @@ function TodoForm(props) {
 
 // why is it not rendering the page with the new information?
         return (
+          <div className="form">
+          <Jumbotron>
             <Form className="todo-form" onSubmit={handleSubmit}>
 
               <fieldset>
@@ -132,7 +136,8 @@ function TodoForm(props) {
             </fieldset> 
  
        </Form>
-       
+       </Jumbotron>
+       </div>
     )
 }
 

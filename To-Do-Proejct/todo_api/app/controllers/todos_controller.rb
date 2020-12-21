@@ -3,9 +3,9 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
-    monday = Todo.where(day: "Monday")
+    @todos = Todo.all.order(:day)
     # @todos = Todo.all
-    @todos = {"monday": monday}
+
 
     render json: @todos
   end

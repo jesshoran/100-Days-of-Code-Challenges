@@ -27,6 +27,4 @@ Todo.create([
 "isCompleted": "false"
 },
 
-
-
 ])
