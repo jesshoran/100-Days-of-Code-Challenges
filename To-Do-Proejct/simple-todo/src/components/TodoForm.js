@@ -60,9 +60,9 @@ function TodoForm(props) {
 // why is it not rendering the page with the new information?
         return (
           <div className="form">
-          <Jumbotron>
+          <Jumbotron className="jumbotron-1">
             <Form className="todo-form" onSubmit={handleSubmit}>
-
+            <h1>Add a Todo Here</h1>
               <fieldset>
 
               <Form.Row xs={4} md={6} lg={12}>

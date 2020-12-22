@@ -4,6 +4,9 @@ import { Button } from 'react-bootstrap';
 import axios from 'axios';
 import TodoForm from './TodoForm';
 import Todo from './Todo'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Col, Row } from 'react-bootstrap';
+
 
 
 
@@ -29,22 +32,37 @@ function TodoList ( props ) {
 
     const allTodos = todos.map ( todo => {
     return (
-            <div key={todo.id} className="todo">
+        <Row key={todo.id} className="todo">
+                  <Col lg={4} className="justify-content-center">
                 <h5>{todo.task}</h5>
-                <p>{todo.department}</p>   
-                <p>{todo.day}</p>
+                </Col>
+                
+                <Col lg={4}>
                 <Button style= {{margin: 'auto'}} size="sm" 
                 href={`/todos/${todo.id}`} 
                 variant="outline-light"
+                className="learn-more-button"
                 >Learn More</Button>   
-            </div>
+                 </Col> 
+
+                 <Col lg={4}>
+                <p>{todo.department}</p>  
+               </Col>
+           
+        </Row>
             );
         });
         return (
             <div>
-                <h1>What do we have going on this week?</h1>
+                
+                <Jumbotron className="jumbotron-2">
+                <h1>Jess' Weekly To Do</h1>
+
+
+                </Jumbotron>
+
                 <Button className="add-todo-button" 
-                size="lg" block
+                size="lg" 
                 href={`/add`} 
                 variant="outline-light"
                 >Add a Todo</Button>  

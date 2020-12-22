@@ -24,7 +24,7 @@ function Todo (props) {
 
 
   return  (
-    <Jumbotron clssName="todo-show" key={id} >
+    <Jumbotron className="jumbotron-1" key={id} >
         <h1>To-Do: {task} </h1>
           {/* <h1 style={{color: 'gold'}}>{task}</h1> */}
         <h3>Is this Work, Personal or Other? {department}</h3> 
