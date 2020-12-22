@@ -5,7 +5,11 @@ class TodosController < ApplicationController
   def index
     sunday = Todo.where(day: "Sunday")
     monday = Todo.where(day: "Monday")
+    tuesday = Todo.where(day: "Tuesday")
+    wednesday = Todo.where(day: "Wednesday")
     thursday = Todo.where(day: "Thursday")
+    friday = Todo.where(day: "Friday")
+    saturday = Todo.where(day: "Saturday")
     @todos = {"sunday": sunday, "monday": monday, "thursday": thursday}
     # @todos = Todo.all
 
