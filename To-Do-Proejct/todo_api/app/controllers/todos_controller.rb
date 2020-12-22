@@ -3,7 +3,10 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
-    @todos = Todo.all.order(:day)
+    sunday = Todo.where(day: "Sunday")
+    monday = Todo.where(day: "Monday")
+    thursday = Todo.where(day: "Thursday")
+    @todos = {"sunday": sunday, "monday": monday, "thursday": thursday}
     # @todos = Todo.all
 
 

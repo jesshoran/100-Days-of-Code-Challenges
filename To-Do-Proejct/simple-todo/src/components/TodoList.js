@@ -3,6 +3,8 @@ import { Button } from 'react-bootstrap';
 
 import axios from 'axios';
 import TodoForm from './TodoForm';
+import TodoByDay from './TodoByDay';
+
 import Todo from './Todo'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Col, Row } from 'react-bootstrap';
@@ -30,28 +32,9 @@ function TodoList ( props ) {
       )()
     },[])
 
-    const allTodos = todos.map ( todo => {
-    return (
-        <Row key={todo.id} className="todo">
-                  <Col lg={4} className="justify-content-center">
-                <h5>{todo.task}</h5>
-                </Col>
-                
-                <Col lg={4}>
-                <Button style= {{margin: 'auto'}} size="sm" 
-                href={`/todos/${todo.id}`} 
-                variant="outline-light"
-                className="learn-more-button"
-                >Learn More</Button>   
-                 </Col> 
 
-                 <Col lg={4}>
-                <p>{todo.department}</p>  
-               </Col>
-           
-        </Row>
-            );
-        });
+
+     
         return (
             <div>
                 
@@ -66,7 +49,44 @@ function TodoList ( props ) {
                 href={`/add`} 
                 variant="outline-light"
                 >Add a Todo</Button>  
-            {allTodos}
+
+            <div className="sunday-todo">
+                <h2>Sunday:</h2>
+           <TodoByDay todos={todos.sunday}></TodoByDay>
+           </div>
+
+
+           <div className="monday-todo">
+                <h2>Monday:</h2>
+           <TodoByDay todos={todos.monday}></TodoByDay>
+           </div>
+
+           <div className="tuesday-todo">
+                <h2>Tuesday:</h2>
+           <TodoByDay todos={todos.tuesday}></TodoByDay>
+           </div>
+
+           <div className="wednesday-todo">
+                <h2>Wednesday:</h2>
+           <TodoByDay todos={todos.wednesday}></TodoByDay>
+           </div>
+
+           <div className="thursday-todo">
+                <h2>Thursday:</h2>
+           <TodoByDay todos={todos.thursday}></TodoByDay>
+           </div>
+
+           <div className="friday-todo">
+                <h2>Friday:</h2>
+           <TodoByDay todos={todos.friday}></TodoByDay>
+           </div>
+
+           <div className="day-todo">
+                <h2>Saturday:</h2>
+           <TodoByDay todos={todos.saturday}></TodoByDay>
+           </div>
+
+
             </div>
         )
       
