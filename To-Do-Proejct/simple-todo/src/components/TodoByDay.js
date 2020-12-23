@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {useParams, Link} from "react-router-dom";
-import { Col, Row, Button } from 'react-bootstrap';
+import { Container, Col, Row, Button } from 'react-bootstrap';
+import { RiLayoutRowFill } from 'react-icons/ri';
 
 function TodoByDay (props) {
         
@@ -27,24 +28,28 @@ function TodoByDay (props) {
       <div className="todo-by-day">
           {props.todos?.map( todo => {
               return  (
-                <Row key={todo.id} className="todo">
-                <Col lg={4} className="justify-content-center">
+                <div key={todo.id} className="todo">
+                <Row className="justify-content-center">
+                    <Col>
               <h5>{todo.task}</h5>
               </Col>
+              </Row>
               
-              <Col lg={4}>
+              <Row >
+                  <Col>
               <Button style= {{margin: 'auto'}} size="sm" 
               href={`/todos/${todo.id}`} 
               variant="outline-light"
               className="learn-more-button"
-              >Learn More</Button>   
-               </Col> 
+              >See More</Button>   
+              </Col>
+               </Row> 
 
-               <Col lg={4}>
+               {/* <Col lg={4}>
               <p>{todo.department}</p>  
-             </Col>
+             </Col> */}
          
-      </Row>
+      </div>
               )
           })}
       </div>

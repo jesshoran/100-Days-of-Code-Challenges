@@ -36,7 +36,7 @@ function TodoList ( props ) {
 
      
         return (
-            <div>
+            <div className="todo-list-page">
                 
                 <Jumbotron className="jumbotron-2">
                 <h1>Jess' Weekly To Do</h1>
@@ -49,34 +49,35 @@ function TodoList ( props ) {
                 href={`/add`} 
                 variant="outline-light"
                 >Add a Todo</Button>  
-
-            <div className="sunday-todo">
+                
+        <div className="todo-full-list">
+            <div className="day-todo">
                 <h2>Sunday:</h2>
            <TodoByDay todos={todos.sunday}></TodoByDay>
            </div>
 
 
-           <div className="monday-todo">
+           <div className="day-todo">
                 <h2>Monday:</h2>
            <TodoByDay todos={todos.monday}></TodoByDay>
            </div>
 
-           <div className="tuesday-todo">
+           <div className="day-todo">
                 <h2>Tuesday:</h2>
            <TodoByDay todos={todos.tuesday}></TodoByDay>
            </div>
 
-           <div className="wednesday-todo">
+           <div className="day-todo">
                 <h2>Wednesday:</h2>
            <TodoByDay todos={todos.wednesday}></TodoByDay>
            </div>
 
-           <div className="thursday-todo">
+           <div className="day-todo">
                 <h2>Thursday:</h2>
            <TodoByDay todos={todos.thursday}></TodoByDay>
            </div>
 
-           <div className="friday-todo">
+           <div className="day-todo">
                 <h2>Friday:</h2>
            <TodoByDay todos={todos.friday}></TodoByDay>
            </div>
@@ -85,7 +86,7 @@ function TodoList ( props ) {
                 <h2>Saturday:</h2>
            <TodoByDay todos={todos.saturday}></TodoByDay>
            </div>
-
+        </div>
 
             </div>
         )

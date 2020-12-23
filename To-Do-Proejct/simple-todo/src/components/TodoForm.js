@@ -64,22 +64,20 @@ function TodoForm(props) {
             <Form className="todo-form" onSubmit={handleSubmit}>
             <h1>Add a Todo Here</h1>
               <fieldset>
-
-              <Form.Row xs={4} md={6} lg={12}>
-
-                <Col lg={5}>
-                  <Form.Group>
-                    <Form.Label htmlFor="task">Task:</Form.Label>
-                      <Form.Control 
+              <Form.Row>             
+                <Form.Group controlId="formBasicText">
+                  <Form.Label htmlFor="task">Task:</Form.Label>
+                    <Form.Control 
                       type="text" 
                       id="task"
                       value={formInputs.task} 
                       onChange={handleChange}
                       placeholder="Eat cake...cheat day!"/>
-                  </Form.Group>
-                  </Col>
+                </Form.Group>
+              
+              </Form.Row>
+              <Form.Row>
 
-                <Col lg={3}>
                   <Form.Group>
                     <Form.Label htmlFor="day">Day:</Form.Label>
                       <Form.Control
@@ -98,9 +96,9 @@ function TodoForm(props) {
                         <option>Saturday</option>
                         </Form.Control>
                     </Form.Group >
-                    </Col>
+                </Form.Row>
+                <Form.Row>
                  
-                <Col lg={3}>
                     <Form.Group>
                       <Form.Label htmlFor="department">Work, Personal, Other?</Form.Label>
                       <Form.Control  
@@ -110,9 +108,9 @@ function TodoForm(props) {
                       onChange={handleChange}
                       placeholder="Personal"/>
                     </Form.Group>
-                    </Col>
-                    <Col lg={1}>
-                 
+                   
+                    </Form.Row>
+                  <Form.Row>
                     <Form.Group>
                       <Form.Label htmlFor="isCompleted">Done?</Form.Label>
                       <Form.Control  
@@ -125,11 +123,11 @@ function TodoForm(props) {
                       
                       />
                      </Form.Group>
+                     </Form.Row>
 {/* no value is being pushed for isCompleted */}
 
                
-                  </Col>
-           </Form.Row>
+      
            <Form.Row>  
             <Form.Control type= "submit" className="submit" />
             </Form.Row> 

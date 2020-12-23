@@ -6791,3 +6791,1635 @@ Processing by TodosController#index as */*
 Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3249)
 
 
+Started GET "/todos" for ::1 at 2020-12-21 22:28:27 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 1.1ms | Allocations: 3374)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.8ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.1ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 2.2ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:34:35 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos/118" for ::1 at 2020-12-21 22:39:27 -0800
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"118"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 118], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:53:in `set_todo'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 866)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.3ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:39:31 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:19 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.8ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.8ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:42 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:41:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:05 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:42:20 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:44:12 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.9ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.9ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:54 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.2ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:46:56 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.7ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:28 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos/118" for ::1 at 2020-12-21 22:47:45 -0800
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"118"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 118], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:53:in `set_todo'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 753)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:47:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos/118" for ::1 at 2020-12-21 22:48:48 -0800
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"118"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = $1 LIMIT $2[0m  [["id", 118], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:53:in `set_todo'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 753)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-21 22:49:25 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:17:59 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (1.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 3.4ms | Allocations: 3373)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 2.2ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.0ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.0ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-22 14:18:00 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.8ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 51ms (Views: 14.0ms | ActiveRecord: 2.4ms | Allocations: 3373)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.8ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:17:32 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started POST "/todos" for ::1 at 2020-12-23 14:56:05 -0800
+Processing by TodosController#create as HTML
+  Parameters: {"task"=>"OTF at noon", "department"=>"Personal", "day"=>"Saturday", "isCompleted"=>false, "todo"=>{"task"=>"OTF at noon", "department"=>"Personal", "day"=>"Saturday", "isCompleted"=>false}}
+[31mUnpermitted parameter: :isCompleted[0m
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/todos_controller.rb:29:in `create'
+  [1m[36mTodo Create (22.6ms)[0m  [1m[32mINSERT INTO "todos" ("task", "department", "created_at", "updated_at", "day") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["task", "OTF at noon"], ["department", "Personal"], ["created_at", "2020-12-23 22:56:06.047683"], ["updated_at", "2020-12-23 22:56:06.047683"], ["day", "Saturday"]]
+  ↳ app/controllers/todos_controller.rb:29:in `create'
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/todos_controller.rb:29:in `create'
+Completed 201 Created in 78ms (Views: 5.9ms | ActiveRecord: 33.0ms | Allocations: 2838)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (2.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 2.8ms | Allocations: 3349)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.2ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (13.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 21ms (Views: 6.6ms | ActiveRecord: 13.7ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.6ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:16 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (1.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.7ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.7ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.9ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 3249)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 3250)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:21 -0800
+Processing by TodosController#index as */*
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 3251)
+
+
+Started GET "/todos" for ::1 at 2020-12-23 14:56:37 -0800
+Processing by TodosController#index as HTML
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Sunday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Monday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."day" = $1[0m  [["day", "Thursday"]]
+  ↳ app/controllers/todos_controller.rb:17:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 3248)
+
+
