@@ -1,7 +1,10 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {Link, useState, useEffect, useRef} from 'react'
 import axios from 'axios';
 import { Form, Col, Row } from 'react-bootstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import TodoList from './TodoList';
+import { render } from '@testing-library/react';
+
 
 
 function TodoForm(props) {
@@ -21,12 +24,18 @@ function TodoForm(props) {
       console.log(formInputs)
     };
     
+    
 
     const handleChange = (event) => {
-      const updatedFormInputs = Object.assign({}, formInputs, { [event.target.id]: event.target.value})
-      updateFormInputs(updatedFormInputs)
-      // console.log(updatedFormInputs)
+      // const updatedFormInputs = Object.assign({}, formInputs, 
+        // { [event.target.id]: event.target.value})
+        if (event.target.type === 'checkbox' && !event.target.checked) {
+          updateFormInputs({...formInputs, [event.target.isChecked]: event.target.checked});
+      } else {
+        updateFormInputs({...formInputs, [event.target.id]: event.target.value });
       }
+      // updateFormInputs(updatedFormInputs)
+    }
     
     const handleChangeCheck = (event) => {
       const value =
@@ -48,13 +57,14 @@ function TodoForm(props) {
             task: '',
             department: '',
             day: '',
-            isCompleted: Boolean  
+            isCompleted: false
           })
           await setTodos([createdTodos, ...todos])
           console.log(createdTodos)
         }catch(error){
           console.error(error)
         }
+        <Link to="/"></Link>
       }
 
 // why is it not rendering the page with the new information?
@@ -71,7 +81,7 @@ function TodoForm(props) {
                       type="text" 
                       id="task"
                       value={formInputs.task} 
-                      onChange={handleChange}
+                      onChange={handleChangeCheck}
                       placeholder="Eat cake...cheat day!"/>
                 </Form.Group>
               
@@ -85,8 +95,9 @@ function TodoForm(props) {
                       // type="text" 
                       id="day"
                       value={formInputs.date} 
-                      onChange={handleChange}
+                      onChange={handleChangeCheck}
                       placeholder="Select Day">
+                        <option>  </option>
                         <option>Sunday</option>
                         <option>Monday</option>
                         <option>Tuesday</option>
@@ -105,7 +116,7 @@ function TodoForm(props) {
                       id="department" 
                       type="text"
                       value={formInputs.department} 
-                      onChange={handleChange}
+                      onChange={handleChangeCheck}
                       placeholder="Personal"/>
                     </Form.Group>
                    
@@ -125,9 +136,6 @@ function TodoForm(props) {
                      </Form.Group>
                      </Form.Row>
 {/* no value is being pushed for isCompleted */}
-
-               
-      
            <Form.Row>  
             <Form.Control type= "submit" className="submit" />
             </Form.Row> 

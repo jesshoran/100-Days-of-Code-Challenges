@@ -27,9 +27,9 @@ function Todo (props) {
     <Jumbotron className="jumbotron-1" key={id} >
         <h1>To-Do: {task} </h1>
           {/* <h1 style={{color: 'gold'}}>{task}</h1> */}
-        <h3>Is this Work, Personal or Other? {department}</h3> 
+        <h3>{department}</h3> 
         
-        <h3>Date to finish: {day}</h3>    
+        <h3>{day}</h3>    
         <p>Add notes here:</p>
     </Jumbotron>
     )

@@ -10,9 +10,8 @@ class TodosController < ApplicationController
     thursday = Todo.where(day: "Thursday")
     friday = Todo.where(day: "Friday")
     saturday = Todo.where(day: "Saturday")
-    @todos = {"sunday": sunday, "monday": monday, "thursday": thursday}
+    @todos = {"sunday": sunday, "monday": monday, "tuesday": tuesday, "wednesday": wednesday, "thursday": thursday, "friday": friday, "saturday": saturday}
     # @todos = Todo.all
-
 
     render json: @todos
   end
